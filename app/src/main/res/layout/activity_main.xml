@@ -113,9 +113,9 @@
             android:id="@+id/callJawwalBt"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="4dp"
             android:layout_marginTop="30dp"
-            android:backgroundTint="#4CAF50"
             android:text="جوال بي"
             android:textColor="@color/white"
             android:textStyle="bold"
@@ -124,17 +124,18 @@
             app:iconPadding="8dp"
             app:iconSize="24dp"
             app:iconTint="@null"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/rounded_buttons"
+            app:backgroundTint="@null"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/callPalpayBt"
             app:layout_constraintTop_toBottomOf="@id/typeRg" />
 
         <Button
             android:id="@+id/callPalpayBt"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="15dp"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="#9C27B0"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="15dp"
             android:text="بال باي"
             android:textColor="@color/white"
             android:textStyle="bold"
@@ -143,9 +144,12 @@
             app:iconPadding="8dp"
             app:iconSize="24dp"
             app:iconTint="@null"
+            android:background="@drawable/rounded_button2"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toEndOf="@id/callJawwalBt"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/callJawwalBt" />
+            app:layout_constraintTop_toTopOf="@id/callJawwalBt"
+            app:layout_constraintBottom_toBottomOf="@id/callJawwalBt" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
